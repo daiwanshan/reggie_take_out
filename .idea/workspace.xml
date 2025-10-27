@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="407fa8cd-fcd6-49d4-9164-ec74d7ad9156" name="更改" comment="使用Redis缓存短信验证码和菜品信息" />
+    <list default="true" id="407fa8cd-fcd6-49d4-9164-ec74d7ad9156" name="更改" comment="使用Redis缓存短信验证码和菜品信息">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -241,6 +243,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="redis配置类" />
     <MESSAGE value="使用Redis缓存短信验证码和菜品信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用Redis缓存短信验证码和菜品信息" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/v1.0' into v1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/v1.0' into v1.0" />
   </component>
 </project>
