@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="407fa8cd-fcd6-49d4-9164-ec74d7ad9156" name="更改" comment="使用Redis缓存短信验证码和菜品信息">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanshan/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanshan/reggie/controller/DishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanshan/reggie/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanshan/reggie/controller/UserController.java" afterDir="false" />
-    </list>
+    <list default="true" id="407fa8cd-fcd6-49d4-9164-ec74d7ad9156" name="更改" comment="使用Redis缓存短信验证码和菜品信息" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -220,7 +215,7 @@
       <workItem from="1760865592003" duration="1443000" />
       <workItem from="1760952716267" duration="5140000" />
       <workItem from="1760959488309" duration="332000" />
-      <workItem from="1761555949084" duration="4307000" />
+      <workItem from="1761555949084" duration="4620000" />
     </task>
     <task id="LOCAL-00001" summary="redis配置类">
       <option name="closed" value="true" />
@@ -246,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761555985970</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="使用Redis缓存短信验证码和菜品信息">
+      <option name="closed" value="true" />
+      <created>1761560485565</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761560485565</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
