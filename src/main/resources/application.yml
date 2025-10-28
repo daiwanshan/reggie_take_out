@@ -14,7 +14,7 @@ spring:
   redis:
     host: localhost
     port: 6379
-#    password:
+  #    password:
     database: 0
     jedis:
       pool:
@@ -22,6 +22,10 @@ spring:
         max-wait: 1ms
         max-idle: 4
         min-idle: 0
+
+  cache:
+    redis:
+      time-to-live: 1800000 #缓存过期时间 1800000毫秒=30分钟
 mybatis-plus:
   configuration:
     #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射

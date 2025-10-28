@@ -16,6 +16,8 @@ import com.wanshan.reggie.service.SetmealService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
@@ -39,6 +41,7 @@ public class SetmealController {
 
     @PostMapping
     @Transactional
+    @CacheEvict(value = "setmealCache",allEntries = true)
     public R<String> save(@RequestBody SetmealDto setmealDto) {
         Setmeal setmeal = BeanUtil.copyProperties(setmealDto, Setmeal.class);
         setmealService.save(setmeal);
@@ -79,6 +82,7 @@ public class SetmealController {
 
     @DeleteMapping
     @Transactional
+    @CacheEvict(value = "setmealCache",allEntries = true)
     public R<String> delete(@RequestParam List<Long> ids) {
         Long count = Db.lambdaQuery(Setmeal.class)
                 .in(Setmeal::getId, ids)
@@ -137,6 +141,7 @@ public class SetmealController {
     }
 
     @GetMapping("/list")
+    @Cacheable(value = "setmealCache",key = "#setmeal.categoryId + '_' + setmeal.status")
     public R<List<SetmealDto>> list(Setmeal setmeal){
         List<Setmeal> setmealList = Db.lambdaQuery(Setmeal.class)
                 .eq(Setmeal::getCategoryId, setmeal.getCategoryId())
