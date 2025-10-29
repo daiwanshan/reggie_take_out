@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="407fa8cd-fcd6-49d4-9164-ec74d7ad9156" name="更改" comment="使用Redis缓存短信验证码和菜品信息">
+    <list default="true" id="407fa8cd-fcd6-49d4-9164-ec74d7ad9156" name="更改" comment="使用Sharding-JDBC实现程序的读写分离">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,6 +222,7 @@
       <workItem from="1760959488309" duration="332000" />
       <workItem from="1761555949084" duration="4620000" />
       <workItem from="1761728121299" duration="617000" />
+      <workItem from="1761739085635" duration="713000" />
     </task>
     <task id="LOCAL-00001" summary="redis配置类">
       <option name="closed" value="true" />
@@ -288,6 +291,7 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/v1.0' into v1.0" />
     <MESSAGE value="使用Spring Cache缓存套餐数据" />
     <MESSAGE value="使用Redis缓存短信验证码和菜品信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用Redis缓存短信验证码和菜品信息" />
+    <MESSAGE value="使用Sharding-JDBC实现程序的读写分离" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用Sharding-JDBC实现程序的读写分离" />
   </component>
 </project>
