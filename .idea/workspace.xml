@@ -280,11 +280,24 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="redis配置类" />
     <MESSAGE value="Merge remote-tracking branch 'origin/v1.0' into v1.0" />
     <MESSAGE value="使用Spring Cache缓存套餐数据" />
     <MESSAGE value="使用Redis缓存短信验证码和菜品信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用Redis缓存短信验证码和菜品信息" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/v1.1' into v1.1&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="使用Sharding-JDBC实现程序的读写分离" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用Sharding-JDBC实现程序的读写分离" />
   </component>
 </project>
