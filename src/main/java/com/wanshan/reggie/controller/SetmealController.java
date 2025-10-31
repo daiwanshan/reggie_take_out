@@ -141,7 +141,7 @@ public class SetmealController {
     }
 
     @GetMapping("/list")
-    @Cacheable(value = "setmealCache",key = "#setmeal.categoryId + '_' + setmeal.status")
+    @Cacheable(value = "setmealCache",key = "#setmeal.categoryId + '_' + #setmeal.status")
     public R<List<SetmealDto>> list(Setmeal setmeal){
         List<Setmeal> setmealList = Db.lambdaQuery(Setmeal.class)
                 .eq(Setmeal::getCategoryId, setmeal.getCategoryId())

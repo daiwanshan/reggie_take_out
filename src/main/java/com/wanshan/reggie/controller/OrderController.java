@@ -139,4 +139,33 @@ public class OrderController {
 
         return R.success(pageDto);
     }
+
+    @GetMapping ("/page")
+    public R<Page<OrdersDto>> page(int page, int pageSize, String number, String beginTime, String endTime){
+        Page<Orders> pageInfo = new Page<>(page, pageSize);
+        LambdaQueryWrapper<Orders> wrapper = new LambdaQueryWrapper<Orders>()
+                .eq(number != null, Orders::getNumber, number)
+                .between(beginTime != null && endTime != null, Orders::getOrderTime, beginTime, endTime)
+                .orderByDesc(Orders::getOrderTime);
+        ordersService.page(pageInfo, wrapper);
+
+        Page<OrdersDto> pageDto = new Page<>();
+        BeanUtil.copyProperties(pageInfo, pageDto, "records");
+
+        List<Orders> records = pageInfo.getRecords();
+        List<OrdersDto> ordersDtos = BeanUtil.copyToList(records, OrdersDto.class);
+
+        List<OrdersDto> dtoList = ordersDtos.stream()
+                .map(item -> {
+                    List<OrderDetail> orderDetailList = Db.lambdaQuery(OrderDetail.class)
+                            .eq(OrderDetail::getOrderId, item.getNumber())
+                            .list();
+                    item.setOrderDetails(orderDetailList);
+                    return item;
+                }).collect(Collectors.toList());
+
+        pageDto.setRecords(dtoList);
+
+        return R.success(pageDto);
+    }
 }
