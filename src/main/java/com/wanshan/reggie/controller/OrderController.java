@@ -52,7 +52,9 @@ public class OrderController {
     @RequestMapping("/submit")
     @Transactional
     public R<String> submit(@RequestBody Orders orders){
+        log.info(orders.toString());
         Long userId = BaseContext.getCurrentId();
+        log.info(userId.toString());
 
         List<ShoppingCart> shoppingCartList = Db.lambdaQuery(ShoppingCart.class)
                 .eq(ShoppingCart::getUserId, userId)

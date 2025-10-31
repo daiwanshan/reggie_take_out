@@ -135,8 +135,8 @@ public class DishController {
 
         dishService.removeBatchByIds(ids);
 
-        LambdaUpdateChainWrapper<DishFlavor> wrapper = new LambdaUpdateChainWrapper<DishFlavor>(DishFlavor.class)
-                .in(DishFlavor::getDishId, ids);
+        LambdaQueryWrapper<DishFlavor> wrapper = new LambdaQueryWrapper<>();
+        wrapper.in(DishFlavor::getDishId, ids);
         dishFlavorService.remove(wrapper);
         return R.success("批量删除成功");
     }
